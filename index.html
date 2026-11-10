@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Simon Abugu · Game Developer</title>
-<meta name="description" content="Simon Abugu, Unity game developer. Selected work, experience and contact.">
+<title>Simon Abugu · Software Engineer</title>
+<meta name="description" content="Simon Abugu, software engineer. Experience, skills, projects and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -58,6 +58,11 @@
   ul.points li { padding-left: 16px; position: relative; margin-bottom: 6px; }
   ul.points li::before { content: ""; position: absolute; left: 0; top: 0.8em; width: 6px; height: 1px; background: var(--muted); }
   .tools { color: var(--muted); font-size: 14px; }
+  .skills { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .skills li { font-size: 14px; padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px; }
+  .proj { margin-bottom: 20px; }
+  .proj:last-child { margin-bottom: 0; }
+  .proj p { color: var(--muted); font-size: 15px; }
   .note { color: var(--muted); font-size: 14px; font-style: italic; }
   .cta { display: inline-block; font-size: 15px; font-weight: 500; margin-top: 4px; }
 
@@ -85,15 +90,34 @@
   <header>
     <img class="avatar" src="img/header/2.jpg" alt="Simon Abugu">
     <h1>Simon Abugu</h1>
-    <p class="role">Game developer · Unity &amp; C# · Remote</p>
-    <p class="bio">I'm an organised programmer with years of experience in software development, focused on the satisfaction of the end user and committed to impeccable work done efficiently. I build mobile and multiplayer games, and I'm open to new game development opportunities.</p>
+    <p class="role">Software engineer · C#, Unity, JavaScript · Remote</p>
+    <p class="bio">I'm a software engineer with several years of experience building interactive 3D, web and mobile products. I've led engine and architecture work, built systems that handle 100,000+ objects, connected React front ends to 3D engines, and managed and mentored teams. I care about clean, scalable code and work that meets the needs of the people using it.</p>
     <nav class="links">
       <a href="mailto:simondevofficial@gmail.com">Email</a>
       <a href="Abugu Simon Afamuefuna CV.pdf">Resume</a>
+      <a href="https://github.com/Afamuefuna">GitHub</a>
       <a href="https://afamuefuna.itch.io/">itch.io</a>
       <a href="https://medium.com/@afamuefunasabugu">Medium</a>
     </nav>
   </header>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>C#</li>
+      <li>Unity 3D</li>
+      <li>JavaScript</li>
+      <li>HTML &amp; CSS</li>
+      <li>React integration</li>
+      <li>REST APIs</li>
+      <li>WebSockets</li>
+      <li>Software architecture</li>
+      <li>Debugging &amp; optimisation</li>
+      <li>Git &amp; GitHub</li>
+      <li>JIRA</li>
+      <li>Mentoring</li>
+    </ul>
+  </section>
 
   <section id="experience">
     <h2>Experience</h2>
@@ -104,14 +128,15 @@
         <span class="meta">2024 to 2025</span>
       </div>
       <p class="sub">Software engineer · Franklin, Tennessee, USA</p>
-      <p>A Unity-based 3D digital twin platform for warehouses.</p>
+      <p>A 3D digital twin platform for warehouses.</p>
       <ul class="points">
-        <li><b>Procedural configurator engine</b>: led development of automated, interactive warehouse digital twins (racks, aisles, sections, storage).</li>
-        <li><b>3D navigation</b>: orbit, free-look, walk and fly modes, zoom, search and object focus for large facilities.</li>
-        <li><b>Persistence</b>: scalable saving and loading of complex hierarchical warehouse data.</li>
-        <li><b>Search and filtering</b>: fast lookups across 100,000+ warehouse objects.</li>
-        <li><b>React-to-Unity bridge</b>: structured JSON messaging between the web interface and the 3D engine.</li>
-        <li>Built the proof of concept that helped secure venture capital funding, and set the engineering standards, documentation and architecture for the team.</li>
+        <li>Led development of a <b>procedural configurator engine</b> that automatically generates accurate, interactive warehouse digital twins (racks, aisles, sections and storage).</li>
+        <li>Architected a <b>scalable persistence system</b> for complex hierarchical warehouse data, so large environments save and load reliably.</li>
+        <li>Built <b>high-performance search and filtering</b> over 100,000+ warehouse objects, cutting lookup times.</li>
+        <li>Built a <b>React-to-Unity bridge</b> using structured JSON messages to connect the web interface to the 3D engine.</li>
+        <li>Built a <b>3D navigation system</b> with orbit, free-look, walk and fly modes, zoom, search and object focus for large facilities.</li>
+        <li>Built and presented the <b>proof of concept</b> that helped secure venture capital funding.</li>
+        <li>Set engineering best practices, documentation standards and architecture that sped up onboarding for new developers.</li>
       </ul>
     </article>
 
@@ -120,22 +145,15 @@
         <h3>LIVIE (formerly MITA)</h3>
         <span class="meta">2023 to 2024</span>
       </div>
-      <p class="sub">Full-time Unity game developer</p>
-      <p>An all-in-one social gaming app where people play games, join communities, compete in battles and earn real rewards.</p>
+      <p class="sub">Game developer</p>
+      <p>A social gaming app where people play, join communities and earn rewards.</p>
       <ul class="points">
-        <li><b>Runner</b>: multiplayer race to the finish line while avoiding obstacles.</li>
-        <li><b>Ludo</b>: multiplayer board game, roll the dice and race your tokens to the centre.</li>
-        <li><b>Whot</b>: multiplayer card game, match the last card played.</li>
-        <li><b>Optimisation</b>: profiled and fixed bottlenecks in 6 offline games so they run smoothly on all devices.</li>
-        <li><b>UI</b>: responsive interfaces across all devices.</li>
-        <li><b>Voice Party games</b>: Memory-Flip, Musical Chairs, Emoji-Rush and more.</li>
+        <li>Developed and launched real-time multiplayer games (Whot, Ludo), boosting installs and engagement.</li>
+        <li>Optimised and integrated 6 offline games to run well on older mobile devices.</li>
+        <li>Worked in a large codebase, keeping code clean, efficient and scalable.</li>
+        <li>Wrote design and technical requirement documents for two multiplayer games.</li>
+        <li>Worked with the CEO, CTO, marketing, design and engineering, tracking work in JIRA and GitHub.</li>
       </ul>
-      <div class="gallery">
-        <img src="img/portfolio/18.png" alt="LIVIE screenshot" loading="lazy">
-        <img src="img/portfolio/17.png" alt="LIVIE screenshot" loading="lazy">
-        <img src="img/portfolio/19.png" alt="LIVIE screenshot" loading="lazy">
-        <img src="img/portfolio/20.png" alt="LIVIE screenshot" loading="lazy">
-      </div>
       <a class="cta" href="https://play.google.com/store/apps/details?id=games.mita.app&amp;hl=en">Google Play →</a>
     </article>
 
@@ -144,16 +162,15 @@
         <h3>Gameplay</h3>
         <span class="meta">Mar 2022 to 2024</span>
       </div>
-      <p class="sub">Software engineer and project manager</p>
-      <p>A 4-in-1 mobile game for a Nigerian startup.</p>
+      <p class="sub">Software engineer and project manager · Nigeria</p>
+      <p>A mobile platform with 4 games and an account management system.</p>
       <ul class="points">
-        <li><b>Football Trivia</b> and <b>Music Trivia</b>: timed question-and-answer games.</li>
-        <li><b>Hidden Objects</b>: find and tap objects spawned in a scene.</li>
-        <li><b>Puzzle Matching</b>: match objects horizontally or vertically to score.</li>
+        <li>Built the platform with <b>REST APIs</b> and <b>WebSockets</b> for accounts, payments and withdrawals.</li>
+        <li>Integrated customer service tools so players get support in the app.</li>
+        <li>Stepped up as <b>project manager</b>: coordinated designers, artists and content editors, and gave daily updates to the CEO and stakeholders.</li>
+        <li>Ran hiring, mentored new team members, and reviewed front-end, back-end and UI/UX work before release.</li>
+        <li>Chose and integrated the team's notification, customer service and workspace tools, and worked as a front-end web developer when needed.</li>
       </ul>
-      <p>I built REST API integration (login, sign-up, payments, withdrawals), WebSocket communication to keep data secure from abuse, responsive UI across phones and tablets, animations, notifications, leaderboards, an in-app browser, plus debugging and optimisation.</p>
-      <p class="tools">Unity, C#, Doozy UI, DOTween, NuGet, Git</p>
-      <div class="video"><iframe src="https://www.youtube.com/embed/rP1jNPg2qmI" title="Gameplay video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <a class="cta" href="https://apps.apple.com/ng/app/gameplay/id6463947369">App Store →</a>
     </article>
 
@@ -162,15 +179,13 @@
         <h3>Pro Sports Gaming LLC</h3>
         <span class="meta">Apr to Nov 2021</span>
       </div>
-      <p class="sub">Contract game developer</p>
-      <p>PSG Football, an American football game for a New York game studio startup.</p>
+      <p class="sub">Contract developer · New York, USA</p>
       <ul class="points">
-        <li><b>Cinematography</b>: team entrance and huddle cutscenes with Timeline and Cinemachine.</li>
-        <li><b>Animation</b>: edited animations and wired them up in the Unity Animator.</li>
-        <li><b>Input</b>: gamepad mapping with Unity's new Input System for UI navigation and movement.</li>
-        <li>UI animation, level design, debugging and fixes.</li>
+        <li>Mapped gamepad controllers with Unity's Input System and synced animation with user input.</li>
+        <li>Recorded and edited motion-capture animation, and built cinematic sequences with Timeline.</li>
+        <li>Integrated 3D assets with the artist, and handled debugging, level design and UI animation.</li>
+        <li>Led regular stand-ups to keep the team aligned.</li>
       </ul>
-      <p class="note">Footage isn't available yet as the game is unreleased.</p>
     </article>
 
     <article class="entry">
@@ -183,66 +198,27 @@
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>The Great Fleece</h3>
-        <span class="meta">Stealth, point and click</span>
-      </div>
-      <p>Join Darren the thief as he descends a black rope into the Beatrice Auction House. I created four cutscenes using voiceover and suspenseful music to reveal the security cameras, patrolling guards and the main vault. The main takeaway: cinematography with Unity.</p>
-      <div class="gallery">
-        <img src="img/portfolio/13.jpg" alt="The Great Fleece screenshot" loading="lazy">
-        <img src="img/portfolio/12.jpg" alt="The Great Fleece screenshot" loading="lazy">
-        <img src="img/portfolio/16.jpg" alt="The Great Fleece screenshot" loading="lazy">
-        <img src="img/portfolio/15.jpg" alt="The Great Fleece screenshot" loading="lazy">
-      </div>
-      <a class="cta" href="https://afamuefuna.itch.io/the-great-fleece">Play →</a>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Dungeon Fighter</h3>
-        <span class="meta">Mini adventure</span>
-      </div>
-      <p>The kingdom is cursed by Bossus. Take up the mighty sword, enter his dungeon and restore the kingdom. Built with tilemaps, persistent saves via binary serialisation, the singleton pattern and advanced C#.</p>
-      <div class="gallery">
-        <img src="img/portfolio/7.jpg" alt="Dungeon Fighter screenshot" loading="lazy">
-        <img src="img/portfolio/9.jpg" alt="Dungeon Fighter screenshot" loading="lazy">
-        <img src="img/portfolio/10.jpg" alt="Dungeon Fighter screenshot" loading="lazy">
-        <img src="img/portfolio/11.jpg" alt="Dungeon Fighter screenshot" loading="lazy">
-      </div>
-      <a class="cta" href="https://afamuefuna.itch.io/dungeon-fighter">Play →</a>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Wordle Grand Prix</h3>
-        <span class="meta">Word game</span>
-      </div>
-      <p>Wordle with scoring and clues: guess as many words as possible before your tries run out. Built for Gems Games.</p>
-      <div class="video"><iframe src="https://www.youtube.com/embed/Mtl6UUO9KVI" title="Wordle Grand Prix video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      <a class="cta" href="https://wordlegrandprix.netlify.app/">Play →</a>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Tap Color Rush</h3>
-        <span class="meta">Hyper-casual puzzle</span>
-      </div>
-      <p>A reflex test: tap to change the tile's colour, swipe to change its side. Beta, so play and leave a review.</p>
-      <div class="video"><iframe src="https://www.youtube.com/embed/YzGIrEkAmLE" title="Tap Color Rush video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      <a class="cta" href="https://afamuefuna.itch.io/tap-colorrush">Play →</a>
-    </article>
-
-    <article class="entry">
-      <div class="entry-head">
-        <h3>Fun Race 3D</h3>
-        <span class="meta">Hyper-casual</span>
-      </div>
-      <p>A recreation of the first level of a hyper-casual favourite: hold to run, let go to stop, and time it right to dodge obstacles and beat the other runners.</p>
-      <div class="video"><iframe src="https://www.youtube.com/embed/q-MiogOZ3B0" title="Fun Race 3D video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-    </article>
+    <h2>Side projects</h2>
+    <div class="proj">
+      <div class="entry-head"><h3><a href="https://afamuefuna.itch.io/dungeon-fighter">Dungeon Fighter</a></h3><span class="meta">Unity, C#</span></div>
+      <p>2D adventure with tilemaps, persistent saves via binary serialisation, design patterns and mobile touch controls.</p>
+    </div>
+    <div class="proj">
+      <div class="entry-head"><h3><a href="https://wordlegrandprix.netlify.app/">Wordle Grand Prix</a></h3><span class="meta">Unity, C#, WebGL</span></div>
+      <p>A Wordle variant with scoring and clues, built for Gems Games.</p>
+    </div>
+    <div class="proj">
+      <div class="entry-head"><h3><a href="https://afamuefuna.itch.io/the-great-fleece">The Great Fleece</a></h3><span class="meta">Unity, C#, WebGL</span></div>
+      <p>Point-and-click stealth game with cinematic cutscenes, a 3D character controller and NPC AI.</p>
+    </div>
+    <div class="proj">
+      <div class="entry-head"><h3><a href="https://afamuefuna.itch.io/tap-colorrush">Tap Color Rush</a></h3><span class="meta">Unity, C#</span></div>
+      <p>Hyper-casual reflex puzzle: tap to change a tile's colour, swipe to change its side.</p>
+    </div>
+    <div class="proj">
+      <div class="entry-head"><h3><a href="https://www.youtube.com/watch?v=q-MiogOZ3B0">Fun Race 3D</a></h3><span class="meta">Unity, C#</span></div>
+      <p>A recreation of a hyper-casual racing level with timing-based obstacles.</p>
+    </div>
   </section>
 
   <section id="education">
